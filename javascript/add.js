@@ -9,7 +9,13 @@ function calculatebtn_Click() {
     var mul = arr[4].checked;
     var div = arr[5].checked;
     document.getElementById('notification').style.color = "red";
-    console.log(arr);
+    if (document.getElementById('result').value != "") {
+        notification = "Không được nhập vào ô kết quả";
+        document.getElementById('notification').value = notification;
+        check = false;
+        document.getElementById('result').value = "";
+        return;
+    } else
     if (firstNumber == "" | secondNumber == "") {
         notification = "Chưa điền đủ hai số để thực hiện phép tính";
         document.getElementById('notification').value = notification;
