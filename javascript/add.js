@@ -15,8 +15,7 @@ function calculatebtn_Click() {
         check = false;
         document.getElementById('result').value = "";
         return;
-    } else
-    if (firstNumber == "" | secondNumber == "") {
+    } else if (firstNumber == "" | secondNumber == "") {
         notification = "Chưa điền đủ hai số để thực hiện phép tính";
         document.getElementById('notification').value = notification;
         check = false;
